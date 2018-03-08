@@ -52,7 +52,8 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>Security 2 – Portfolio</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <p class="lead">1718-AE&I-IVT3.3-Security 2</p>
+      <p class="lead">Ritchie Bos (2115382), Danny Tam (2114633)</p>
     </div>
   </header>
 
@@ -64,7 +65,7 @@
       <div class="container gallery-container">
         <!-- Page Heading One -->
         <h1 class="my-4">Assignment 1
-          <small>Secondary Text</small>
+          <small></small>
         </h1>
 
         <!-- Project One -->
@@ -72,17 +73,23 @@
           <div class="col-md-5">
             <h3>Deployment Diagram</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate.
-              Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+              In period 2.1 and 2.2 we have done a groups project with 6 developers on Server Side Web Development and Single Web Page
+              Application. We have used a Deployment Diagram to visualize our App Development. This is our latest version.
+            </p>
+            <p>
+              As you can see the ASP.NET Infrastructure communicates to the API of the Node Server (Back-end) to get the Accommodations
+              for the ASP.NET (Front-end).
+            </p>
+            <p>
+              AngularUI 2 does the same thing except that it is separate project from ASP.NET and Node Server.
             </p>
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/diagrams/deployment-diagram.png">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/diagrams/deployment-diagram.png">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -93,17 +100,28 @@
           <div class="col-md-5">
             <h3>Use Case Diagram</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate.
-              Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+              You can see in the Use Case Diagram that there are a lot of use cases. Let's identify the actors first wich are Administrator,
+              Accommodation Owner and a Regular User. To keep things simple Administrator owns all the rights of a Accommodation
+              Owner aswell as a Regular User, makes sense right. The Accommodation Owner owns the the same right as a Regular
+              User but a User cannot do the same use cases that our specific to Admin and Owner.
+            </p>
+            <p>
+              Now we got that out of the way let's focus on the three use cases that we have selected for our DFD Schema wich are
+            </p>
+            <p>
+              <ul>
+                <li>Admin -> Accept Accommodation</li>
+                <li>Admin, Owner -> Add Accommodation</li>
+                <li>Admin, Owner, User -> Search Accommodation</li>
+              </ul>
             </p>
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/diagrams/usecase-diagram.png">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/diagrams/usecase-diagram.png">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -114,17 +132,22 @@
           <div class="col-md-5">
             <h3>Context Data Flow Diagram</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate.
-              Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+              Just like in the Use Case Diagram you can see the 3 actors back in our Context Flow Diagram. The Context Flow Diagram is
+              very basic so I am not gonna explain every detail.
+            </p>
+            <p>
+              As you can see we have the HomeMyDay Web Application and the HomeMyDay Accomodation Owner Application as our process. The
+              HomeMyDay Web Application is the ASP.NET Core Web App just as we have seen in the Deployment Diagram. The HomeMyDay
+              Accomodation Owner Application is the Angular project and its being used as a CMS Application for both the
+              Administrator aswell as the Accommodation Owner.
             </p>
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/diagrams/context-data-flow-diagram.png">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/diagrams/context-data-flow-diagram.png">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -135,17 +158,22 @@
           <div class="col-md-5">
             <h3>Level 0 Data Flow Diagram</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate.
-              Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.
+              Remember those three use cases we have picked in our Use Case Diagram? We have now placed them in our Level 0 Data Flow Diagram.
+              The same rules applies just like in our Context Diagram but the communication with both systems have now been
+              specified with more Data flows and Data stores.
+            </p>
+            <p>
+              As you you can see we have put a Internet Boundary between our Front-end and our Back-end. The Back-end consist of only the
+              Node Server since the server communicates to a NoSQL Database (MongoDB) and the Front-end consist of ASP.NET
+              and Angular.
             </p>
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/diagrams/level-0-data-flow-diagram.png">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/diagrams/level-0-data-flow-diagram.png">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -155,12 +183,12 @@
       </div>
     </section>
 
-    <!-- Page Assignment One -->
+    <!-- Page Assignment Two -->
     <section id="assignment-2">
       <div class="container gallery-container">
-        <!-- Page Heading One -->
+        <!-- Page Heading Two -->
         <h1 class="my-4">Assignment 2
-          <small>Secondary Text</small>
+          <small></small>
         </h1>
 
         <!-- Project Two -->
@@ -199,7 +227,7 @@
                     </li>
                   </ul>
                 </li>
-                <li>And as last we do a final check such for all integers
+                <li>And as last we do a final check for all integers
                   <ul>
                     <li>
                       <i>Example: (3*187 mod ((11-1)*(29-1)) = 1)</i>
@@ -216,9 +244,9 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>Let's do the encryption and decryption ourself with message m = 289</b>
-            </h5>
+            </h6>
             <p>
 
             </p>
@@ -227,9 +255,8 @@
             <a class="lightbox" href="./images/rsa/exercise-1.1.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/exercise-1.1.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -238,9 +265,9 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>Now we do it again but then with message m = 5555. Let's see what happens?</b>
-            </h5>
+            </h6>
             <p>
               The reason why we get a different number (132) than 5555 is because we are using modular arithmetic. That means our value
               m (5555) cannot be greater then the remainder of m when divided by n (319).
@@ -250,9 +277,8 @@
             <a class="lightbox" href="./images/rsa/exercise-1.2.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/exercise-1.2.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -261,15 +287,18 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>Based on the outcome, you might conclude that RSA is useless for practical use. How we do we apply RSA in practice
                 in order to circumvent its limitation?</b>
-            </h5>
+            </h6>
             <p>
               The reason why we get a different number (132) than 5555 is because we are using modular arithmetic. That means our value
               m (5555) cannot be greater then the remainder of m when divided by n (319).
             </p>
           </div>
+          <div class="col-md-7">
+
+          </div>
 
         </div>
 
@@ -278,10 +307,10 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>Now let's do it again but then with message m = 143 and let's encrypt it with the private key and decrypt it
                 with the public key. So now we swap the roles of public and private keys.</b>
-            </h5>
+            </h6>
             <p>
               Wow, it still works!
             </p>
@@ -290,9 +319,8 @@
             <a class="lightbox" href="./images/rsa/exercise-1.4.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/exercise-1.4.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -301,15 +329,17 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>We swapped the roles of public and private keys. What is the use of this way of working?</b>
-            </h5>
+            </h6>
             <p>
               By encrypting it with the private key, everyone with the public key will be able to decrypt it, which is not great for confidentiality
               but good for authenticity and integrity. Everyone will know where the encrypted message came from.
             </p>
           </div>
+          <div class="col-md-7">
 
+          </div>
         </div>
 
         <hr>
@@ -318,9 +348,9 @@
         <div class="row">
           <div class="col-md-5">
             <h3>1. Almost-real RSA</h3>
-            <h5>
+            <h6>
               <b>We now gonna use a working RSA implementation in Java. So let's get it running and see that it works</b>
-            </h5>
+            </h6>
             <p>
               This will be our setup. The message we gonna use is "hoi". And just like we did in our exercise above we convert the message
               to a numeric number, in this case we get the bytes of the message. We want to accomplish confidentiality and
@@ -341,33 +371,28 @@
             <a class="lightbox" href="./images/rsa/rsa-message.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/rsa-message.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/rsa/rsa-confidentiality.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/rsa-confidentiality.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/rsa/rsa-confidentiality-output.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/rsa-confidentiality-output.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/rsa/rsa-integrity.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/rsa-integrity.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/rsa/rsa-integrity-output.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/rsa/rsa-integrity-output.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -377,9 +402,9 @@
         <div class="row">
           <div class="col-md-5">
             <h3>3. Certificates</h3>
-            <h5>
+            <h6>
               <b>Let's start by asking what exactly a certificate is?</b>
-            </h5>
+            </h6>
             <p>
               Certificates are digital credentials that are used to verify the identity of individuals, computers, and other entities on
               a network. A Certificate binds a cryptographic key (public and private key) to a domain name, organisation
@@ -387,21 +412,7 @@
             </p>
 
           </div>
-
-        </div>
-
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-          <div class="col-md-5">
-            <h5>
-              <b>Now we know what a certificate is what is a self-signed certificate then?</b>
-            </h5>
-            <p>
-              A self signed certificate is a certificate that is not distributed by a certificate authority, but signed by one’s own private
-              key.
-            </p>
+          <div class="col-md-7">
 
           </div>
 
@@ -412,10 +423,30 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
+              <b>Now we know what a certificate is what is a self-signed certificate then?</b>
+            </h6>
+            <p>
+              A self signed certificate is a certificate that is not distributed by a certificate authority, but signed by one’s own private
+              key.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+
+          </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
               <b>Let's use the OpenSSL library to create our own self-signed certificate (up to 4 steps).
               </b>
-            </h5>
+            </h6>
             <p>
               <ul>
                 <li>
@@ -437,51 +468,43 @@
             <a class="lightbox" href="./images/digital-certs/step-1-generate-a-private-key.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-1-generate-a-private-key.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-1-localhost-key.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-1-localhost-key.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-2-generate-a-csr.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-2-generate-a-csr.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-2-localhost-csr.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-2-localhost-csr.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-3-localhost-key-org.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-3-localhost-key-org.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-3-remove-passphrase-from-key.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-3-remove-passphrase-from-key.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-4-generate-a-self-sign-certificate.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-4-generate-a-self-sign-certificate.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-certs/step-4-localhost-crt.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-certs/step-4-localhost-crt.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -490,26 +513,24 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>To test our new certificate we have created a simple nodejs server and installed the self-signed certificate
                 into it.
               </b>
-            </h5>
+            </h6>
 
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/node-certs/localhost-unsecure.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/node-certs/localhost-unsecure.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/node-certs/localhost-secure.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/node-certs/localhost-secure.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -518,11 +539,11 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>Let's verify it by using wireshark (network analyzer/sniffer tool) that our communication with the nodejs server
                 is encrypted and that confidentiality is ensured.
               </b>
-            </h5>
+            </h6>
             <p>
               <ul>
                 <li>
@@ -539,27 +560,23 @@
             <a class="lightbox" href="./images/wireshark/wireshark-not-confidentiality.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/wireshark/wireshark-not-confidentiality.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/wireshark/hello-unsecure-world.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/wireshark/hello-unsecure-world.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/wireshark/wireshark-confidentiality.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/wireshark/wireshark-confidentiality.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/wireshark/hello-secure-(encrypted).PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/wireshark/hello-secure-(encrypted).PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -569,11 +586,11 @@
         <div class="row">
           <div class="col-md-5">
             <h3>4. Cryptographic hash functions</h3>
-            <h5>
+            <h6>
               <b>A cryptographic hash function must have 3 properties to define its security level. Once one collision has been
                 found, the hash function is considered broken
               </b>
-            </h5>
+            </h6>
             <p>
               A hash function must be able to withstand the following properties
             </p>
@@ -602,10 +619,10 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>We gonna use the OpenSSl library to create a hash using the SHA-256 of the message “I will not use MD5."
               </b>
-            </h5>
+            </h6>
             <p>
               I will not use MD5.
             </p>
@@ -615,9 +632,8 @@
             <a class="lightbox" href="./images/hash/hash-value-i will-not-use-md5.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/hash/hash-value-i will-not-use-md5.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -627,11 +643,11 @@
         <div class="row">
           <div class="col-md-5">
             <h3>5. Digital signature</h3>
-            <h5>
+            <h6>
               <b>Now we gonna change one character of the message "I will not use MD6." and create a SHA-256 hash of the same
                 message. Let's Verify the hashes and see if we can detect tampering!
               </b>
-            </h5>
+            </h6>
             <p>
               However, this is not sufficient to guarantee integrity! How do we know that the message is authentic, meaning that it is
               not tampered with, but also that it actually originates from the lovely Alice and not evil Carol?
@@ -645,15 +661,13 @@
             <a class="lightbox" href="./images/hash/plaintext-i-will-not-use-md6.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/hash/plaintext-i-will-not-use-md6.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/hash/hash-value-i-will-not-use-md6.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/hash/hash-value-i-will-not-use-md6.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -662,11 +676,11 @@
         <!-- Project Two -->
         <div class="row">
           <div class="col-md-5">
-            <h5>
+            <h6>
               <b>We’re are now going to focus on the asymmetric digital signature. Lets combine the concept of digital signature
                 and hash integrity into one and perform the algorithm manually using OpenSSl (up to 4 steps).
               </b>
-            </h5>
+            </h6>
             <p>
               <ul>
                 <li>
@@ -691,57 +705,49 @@
             <a class="lightbox" href="./images/digital-signs/exercise-5.1.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/exercise-5.1.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/generate-rsa-key.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/generate-rsa-key.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/private-key-pem.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/private-key-pem.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
+
             <a class="lightbox" href="./images/digital-signs/generate-public-rsa-key.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/generate-public-rsa-key.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/public-key-pem.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/public-key-pem.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/sign-a-digest.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/sign-a-digest.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/i-will-not-use-md5-hash.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/i-will-not-use-md5-hash.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/verify-a-signed-digest-success.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/verify-a-signed-digest-success.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
             <a class="lightbox" href="./images/digital-signs/verify-a-signed-digest-failure.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/digital-signs/verify-a-signed-digest-failure.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -771,20 +777,19 @@
             <h4>
               Capturing packets in an SSL session
             </h4>
-            <h5>
+            <h6>
               <b>To understand the TLS handshake between client and server, we’re going to perform a Wireshark Lab and see if
                 we understand and answer the questions below. The first step is to capture the packets in an SSL session.
               </b>
-            </h5>
+            </h6>
 
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/tls-ssl/packets-capturen.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/packets-capturen.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
           </div>
         </div>
 
@@ -796,21 +801,396 @@
             <h4>
               A look at the captured trace
             </h4>
-            <h5>
-              <b>For each of the first 8 Ethernet frames, let's specify the source of the frame (client or server), we determine then the
-                number of SSL records that are included in each frame, and list the SSL record types that are included in
-                the frame.
+            <h6>
+              <b>For each of the first 8 Ethernet frames, let's specify the source of the frame (client or server), we determine
+                then the number of SSL records that are included in each frame, and list the SSL record types that are included
+                in the frame.
               </b>
-            </h5>
+            </h6>
 
           </div>
           <div class="col-md-7">
             <a class="lightbox" href="./images/tls-ssl/captured-trace-table.PNG">
               <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/captured-trace-table.PNG">
             </a>
-            <div class="caption">
-              <h3>Click on the image to enlarge</h3>
-            </div>
+            <p></p>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Now let's Draw a timing diagram between client and server, with one arrow for each SSL record.
+              </b>
+            </h6>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/diagrams/localhost-timing-diagram.png">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/diagrams/localhost-timing-diagram.png">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Each of the SSL records begins with the same three fields (with possibly different values). One of these fields
+                is “content type” and has length of one byte. What are the other two?
+              </b>
+            </h6>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/record-protocol-format.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/record-protocol-format.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Client Hello Record
+            </h5>
+            <h6>
+              <b>By Expanding the Client Hello record. we can see the value of the content type.
+              </b>
+            </h6>
+            <p>
+              The value of the Content Type is (22)
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/client-hello-content-type.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/client-hello-content-type.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does the Client Hello record contain a nonce (also known as a “challenge”)? If so, what is the value of the
+                challenge in hexadecimal notation?
+              </b>
+            </h6>
+            <p>
+              The Client Hello record does contain a nonce in wich contains a timestamp and random bytes in it.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/client-hello-random-nonce-(challenge).PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/client-hello-random-nonce-(challenge).PNG">
+            </a>
+            <p></p>
+            <a class="lightbox" href="./images/tls-ssl/client-hello-random-nonce-(hexa).PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/client-hello-random-nonce-(hexa).PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does the Client Hello record advertise the cyber suites it supports? If so, in the first listed suite, what
+                are the public-key algorithm, the symmetric-key algorithm, and the hash algorithm?
+              </b>
+            </h6>
+            <p>
+              <ul>
+                <li>Public-key (asymmetric) algorithm: ECDSA</li>
+                <li>Symmetric-key algorithm: AES</li>
+                <li>Hash algorithm: SHA256</li>
+              </ul>
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/ecdsa-aes-sha256.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/ecdsa-aes-sha256.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Server Hello Record
+            </h5>
+            <h6>
+              <b>Now we gonna locate the Server Hello SSL record. Wich cipher suite Does this record specify? What are the algorithms
+                in the chosen cipher suite?
+              </b>
+            </h6>
+            <p>
+              <ul>
+                <li>Public-key (asymmetric) algorithm: RSA</li>
+                <li>Symmetric-key algorithm: AES</li>
+                <li>Hash algorithm: SHA256</li>
+              </ul>
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/rsa-aes-sha256.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/rsa-aes-sha256.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does this record include a nonce? If so, how long is it? What is the purpose of the client and server nonces
+                in SSL?
+              </b>
+            </h6>
+            <p>
+              The purpose of a nonce is to prevent a replay attack on the server, thanks to the timestamp in the nonce the server will
+              know wich was the last packet the client sent to the server.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/server-hello-random-nonce.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/server-hello-random-nonce.PNG">
+            </a>
+            <p></p>
+            <a class="lightbox" href="./images/tls-ssl/server-hello-random-nonce-(32-bytes).PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/server-hello-random-nonce-(32-bytes).PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does this record include a session ID? What is the purpose of the session ID?
+              </b>
+            </h6>
+            <p>
+              The Server Hello Record does contain a session ID, the purpose of it is to be a identifier for a resuming client session.
+              The client can use this ID to continue in his previous session.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/server-hello-session-id.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/server-hello-session-id.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does this record contain a certificate, or is the certificate included in a separate record. Does the certificate
+                fit into a single Ethernet frame?
+              </b>
+            </h6>
+            <p>
+              The Server Hello Record does contain a session ID, the purpose of it is to be a identifier for a resuming client session.
+              The client can use this ID to continue in his previous session.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/certificate-record-eth-frame.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/certificate-record-eth-frame.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Client Key Exchange Record
+            </h5>
+            <h6>
+              <b>Let's Locate the client key exchange record. Does this record contain a pre-master secret? What is this secret
+                used for? Is the secret encrypted? If so, how? How long is the encrypted secret?
+              </b>
+            </h6>
+            <p>
+              The client key exchange record does not contain a pre-master secret. However, since the selected server key exchange was
+              RSA, a pre-master secret was probably generated from a diffie-hellman exchange protocol. The pre-master secret
+              is the value that you receive from a key exchange, the client generates a pre-master secret and some random
+              bytes (PRNG). The client then encrypts the pre-master secret with the server’s public key (received during
+              the certificate message). The encrypted key is then send to server as a client key exchange message. The server
+              then decrypts the encrypted key using its own private key, at this point both parties know the pre-master secret.
+              both the client and the server then compute the master secret by calculating the client and the server nonces
+              (random) with the pre-master secret. With this both sides now know the master secret. Since Wireshark does
+              not show the pre-master secret in the field description, it must be within the client key exchange record.
+              The overall length of the record is 66 bytes.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/client key exchange pre-master secret.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/client key exchange pre-master secret.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Change Cipher Spec Record (sent by client) and Encrypted Handshake Record
+            </h5>
+            <h6>
+              <b>Now let's look in the Change Cipher Spec Record. What is the purpose of the Change Cipher Spec record? How
+                many bytes is the record in your trace?
+              </b>
+            </h6>
+            <p>
+              The change cipher spec record is sent by both the client and the server to notify the receiving end to encrypt the next incoming
+              SSL records of the contents with the current or new cipher suite.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/chg-ciph-spec-rec.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/chg-ciph-spec-rec.PNG">
+            </a>
+            <p></p>
+            <a class="lightbox" href="./images/tls-ssl/chg-ciph-spec-rec-(6-bytes).PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/chg-ciph-spec-rec-(6-bytes).PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Wat is being encrypted? In the encrypted handshake record and How?
+              </b>
+            </h6>
+            <p>
+              The encrypted handshake record consist of all the handshake messages from both client and the server. The encrypted handshake
+              record is always sent after the change cipher spec record from both sides
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/encrypted-handshake-record.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/encrypted-handshake-record.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h6>
+              <b>Does the server also send a change cipher record and an encrypted handshake record to the client? How are those
+                records different from those sent by the client?
+              </b>
+            </h6>
+            <p>
+              When the client sent its last encrypted handshake message to the server the message is then turned into a finished message.
+              This means that no one tampered with the encrypted handshake and it proves that we know the master secret.
+              The server then starts decrypting the encrypted handshake message and it sends out a change cipher spec record.
+              After the change cipher spec have been send, the server then sends a finished message that contains the decrypted
+              message from the client. This proves to the client that the server was able to successfully decrypt the encrypted
+              handshake message.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Application Data
+            </h5>
+            <h6>
+              <b>We are finally reaching the end, how is the application data being encrypted? Do the records containing application
+                data include a MAC? Does Wireshark distinguish between the encrypted application data and the MAC?
+              </b>
+            </h6>
+            <p>
+              The application data contains the actual data of the messages. The data is encrypted with an symmetric encryption algorithm.
+              The records do contain the Message Authentication Code (MAC) but Wireshark does not distinguish between the
+              encrypted application data.
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/application-data.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/application-data.PNG">
+            </a>
+            <p></p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-5">
+            <h5>
+              Encrypted Alert
+            </h5>
+            <h6>
+              <b>With the last question answered there was one thing that I wanted to know and comment on it.
+              </b>
+            </h6>
+            <p>
+              For the Encrypted Alert at the end of the Wireshark trace is used as a TLS notification to notify the client that the current
+              session is closing (atleast thats what i think).
+            </p>
+
+          </div>
+          <div class="col-md-7">
+            <a class="lightbox" href="./images/tls-ssl/encrypted-alert.PNG">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/tls-ssl/encrypted-alert.PNG">
+            </a>
+            <p></p>
           </div>
         </div>
 
@@ -820,11 +1200,74 @@
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
+    <!-- Page Assignment Three -->
+    <section id="assignment-3">
+      <div class="container gallery-container">
+        <!-- Page Heading Three -->
+        <h1 class="my-4">Assignment 3
+          <small></small>
+        </h1>
 
+        <!-- Project Three -->
+        <div class="row">
+          <div class="col-md-5">
+            <!-- Project Title -->
+            <h3>Title</h3>
+            <!-- Project Context -->
+            <p>
+              Content
+            </p>
+          </div>
+          <div class="col-md-7">
+            <!-- Project Image -->
+            <a class="lightbox" href="./images/examples/700x300.png">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/examples/700x300.png">
+            </a>
+            <p></p>
+
+          </div>
+        </div>
+        <!-- Separete Between Projects -->
+        <hr>
+
+        <!-- /.row -->
       </div>
     </section>
+
+    <!-- Page Assignment Four -->
+    <section id="assignment-4">
+        <div class="container gallery-container">
+          <!-- Page Heading Four -->
+          <h1 class="my-4">Assignment 4
+            <small></small>
+          </h1>
+  
+          <!-- Project Four -->
+          <div class="row">
+            <div class="col-md-5">
+              <!-- Project Title -->
+              <h3>Title</h3>
+              <!-- Project Context -->
+              <p>
+                Content
+              </p>
+            </div>
+            <div class="col-md-7">
+              <!-- Project Image -->
+              <a class="lightbox" href="./images/examples/700x300.png">
+                <img class="img-fluid rounded mb-3 mb-md-0" src="./images/examples/700x300.png">
+              </a>
+              <p></p>
+  
+            </div>
+          </div>
+          <!-- Separete Between Projects -->
+          <hr>
+  
+          <!-- /.row -->
+        </div>
+      </section>
+
   </div>
 
   <!-- Footer -->
