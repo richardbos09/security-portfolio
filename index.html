@@ -36,8 +36,22 @@
             <a class="nav-link js-scroll-trigger" href="#assignment-1">Assignment 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#assignment-2">Assignment 2</a>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <a class="nav-link js-scroll-trigger" href="#assignment-2">Assignment 2</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-scroll-trigger" href="#sniffingrsa">1. Sniffing at RSA</a>
+                <a class="dropdown-item js-scroll-trigger" href="#realrsa">2. Almost-real RSA</a>
+                <a class="dropdown-item js-scroll-trigger" href="#certs">3. Certificates</a>
+
+                <a class="dropdown-item js-scroll-trigger" href="#cryptohash">4. Cryptographic hash functions</a>
+                <a class="dropdown-item js-scroll-trigger" href="#digisigns">5. Digital signature</a>
+                <a class="dropdown-item js-scroll-trigger" href="#tls-ssl">6. TLS/SSL</a>
+              </div>
+            </div>
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#assignment-3">Assignment 3</a>
           </li>
@@ -193,7 +207,7 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-7">
+          <div id="sniffingrsa" class="col-md-7">
             <h3>1. Sniffing at RSA</h3>
             <p>
               We will describe the basic mechanics of the RSA asymmetric encryption algorithm, developed by Adleman, Rivest, and Shamir
@@ -346,8 +360,8 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-5">
-            <h3>1. Almost-real RSA</h3>
+          <div id="realrsa" class="col-md-5">
+            <h3>2. Almost-real RSA</h3>
             <h6>
               <b>We now gonna use a working RSA implementation in Java. So let's get it running and see that it works</b>
             </h6>
@@ -400,7 +414,7 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="certs" class="col-md-5">
             <h3>3. Certificates</h3>
             <h6>
               <b>Let's start by asking what exactly a certificate is?</b>
@@ -584,7 +598,7 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="cryptohash" class="col-md-5">
             <h3>4. Cryptographic hash functions</h3>
             <h6>
               <b>A cryptographic hash function must have 3 properties to define its security level. Once one collision has been
@@ -641,7 +655,7 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="digisigns" class="col-md-5">
             <h3>5. Digital signature</h3>
             <h6>
               <b>Now we gonna change one character of the message "I will not use MD6." and create a SHA-256 hash of the same
@@ -755,7 +769,7 @@
 
         <!-- Project Two -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="tls-ssl" class="col-md-5">
             <h3>6. TLS/SSL</h3>
             <p>
               TLS adds confidentiality and integrity to socket communication. It is the basis for HTTPS. In the network protocol stack,
@@ -1236,37 +1250,37 @@
 
     <!-- Page Assignment Four -->
     <section id="assignment-4">
-        <div class="container gallery-container">
-          <!-- Page Heading Four -->
-          <h1 class="my-4">Assignment 4
-            <small></small>
-          </h1>
-  
-          <!-- Project Four -->
-          <div class="row">
-            <div class="col-md-5">
-              <!-- Project Title -->
-              <h3>Title</h3>
-              <!-- Project Context -->
-              <p>
-                Content
-              </p>
-            </div>
-            <div class="col-md-7">
-              <!-- Project Image -->
-              <a class="lightbox" href="./images/examples/700x300.png">
-                <img class="img-fluid rounded mb-3 mb-md-0" src="./images/examples/700x300.png">
-              </a>
-              <p></p>
-  
-            </div>
+      <div class="container gallery-container">
+        <!-- Page Heading Four -->
+        <h1 class="my-4">Assignment 4
+          <small></small>
+        </h1>
+
+        <!-- Project Four -->
+        <div class="row">
+          <div class="col-md-5">
+            <!-- Project Title -->
+            <h3>Title</h3>
+            <!-- Project Context -->
+            <p>
+              Content
+            </p>
           </div>
-          <!-- Separete Between Projects -->
-          <hr>
-  
-          <!-- /.row -->
+          <div class="col-md-7">
+            <!-- Project Image -->
+            <a class="lightbox" href="./images/examples/700x300.png">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="./images/examples/700x300.png">
+            </a>
+            <p></p>
+
+          </div>
         </div>
-      </section>
+        <!-- Separete Between Projects -->
+        <hr>
+
+        <!-- /.row -->
+      </div>
+    </section>
 
   </div>
 
