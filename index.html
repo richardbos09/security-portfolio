@@ -15,7 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
   <link href="css/scrolling-nav.css" rel="stylesheet">
   <link href="css/gallery-clean.css" rel="stylesheet">
   <style>
@@ -38,9 +38,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#assignment-1">Assignment 1</a>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <a class="nav-link js-scroll-trigger" href="#assignment-1">Assignment 1</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-scroll-trigger" href="#deploy">Deployment Diagram</a>
+                <a class="dropdown-item js-scroll-trigger" href="#usecase">Use Case Diagram</a>
+                <a class="dropdown-item js-scroll-trigger" href="#context">Context Data Flow Diagram</a>
+                <a class="dropdown-item js-scroll-trigger" href="#level-0">Level 0 Data Flow Diagram</a>
+              </div>
           </li>
+
           <li class="nav-item">
             <!-- Example split danger button -->
             <div class="btn-group">
@@ -50,7 +61,6 @@
                 <a class="dropdown-item js-scroll-trigger" href="#sniffingrsa">1. Sniffing at RSA</a>
                 <a class="dropdown-item js-scroll-trigger" href="#realrsa">2. Almost-real RSA</a>
                 <a class="dropdown-item js-scroll-trigger" href="#certs">3. Certificates</a>
-
                 <a class="dropdown-item js-scroll-trigger" href="#cryptohash">4. Cryptographic hash functions</a>
                 <a class="dropdown-item js-scroll-trigger" href="#digisigns">5. Digital signature</a>
                 <a class="dropdown-item js-scroll-trigger" href="#tls-ssl">6. TLS/SSL</a>
@@ -59,14 +69,27 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#assignment-3">Assignment 3</a>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <a class="nav-link js-scroll-trigger" href="#assignment-3">Assignment 3</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-scroll-trigger" href="#mtm">Microsoft Threat Modeling</a>
+              </div>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#assignment-4">Assignment 4</a>
+            <!-- Example split danger button -->
+            <div class="btn-group">
+              <a class="nav-link js-scroll-trigger" href="#assignment-4">Assignment 4</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-scroll-trigger" href="#scrooge">ScroogeCoin</a>
+              </div>
           </li>
         </ul>
-      </div>
-    </div>
+        </div>
+        </div>
   </nav>
 
   <header class="bg-primary text-white">
@@ -82,7 +105,7 @@
 
     <!-- Page Assignment One -->
     <section id="assignment-1">
-      <div class="container gallery-container">
+      <div id="deploy" class="container gallery-container">
         <!-- Page Heading One -->
         <h1 class="my-4">Assignment 1
           <small></small>
@@ -117,7 +140,7 @@
 
         <!-- Project One -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="usecase" class="col-md-5">
             <h3>Use Case Diagram</h3>
             <p>
               You can see in the Use Case Diagram that there are a lot of use cases. Let's identify the actors first wich are Administrator,
@@ -149,7 +172,7 @@
 
         <!-- Project One -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="context" class="col-md-5">
             <h3>Context Data Flow Diagram</h3>
             <p>
               Just like in the Use Case Diagram you can see the 3 actors back in our Context Flow Diagram. The Context Flow Diagram is
@@ -175,7 +198,7 @@
 
         <!-- Project One -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="level-0" class="col-md-5">
             <h3>Level 0 Data Flow Diagram</h3>
             <p>
               Remember those three use cases we have picked in our Use Case Diagram? We have now placed them in our Level 0 Data Flow Diagram.
@@ -1230,50 +1253,60 @@
 
         <!-- Project Three -->
         <div class="row">
-          <div class="col-md-5">
+          <div id="mtm" class="col-md-5">
             <!-- Project Title -->
             <h3>Microsoft Threat Modeling</h3>
             <!-- Project Context -->
             <p>
-              For assignment 3 we were given the task to redo our DFD diagram from assignment 1 in Microsoft Threat Modeling Tool. From
-              the diagram we were able to generate a threat report and see where our systeem are vulnerable. After we looked
-              through the threats list, have choosen the 6 most important vulunability we think need to be taken care of.
-              <a href="./reports/Mitigated.htm">Click here to see the full report.</a>
-              <br>
-              <a href="./codes/Assignment3.zip">Download the code</a>
-              <br> Following the report we have implemented the following features:
-              <div class="list-group">
-                <a href="/" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h4 class="mb-1">ASP</h4>
-                  </div>
-                  <p class="mb-1">HTTPS</p>
-                  <p class="mb-1">Server Certificat Validation</p>
-                </a>
-                <a href="/" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h4 class="mb-1">Node</h4>
-                  </div>
-                  <p class="mb-1">HTTPS</p>
-                  <p class="mb-1">Client Certificat Authentication</p>
-                  <p class="mb-1">Two Factor Authentication</p>
-                  <small class="text-muted">speakeasy</small>
-                  <small class="text-muted">qrcode</small>
-                  <p class="mb-1">Brute Force</p>
-                  <small class="text-muted">express rate-limiter</small>
-                  <p class="mb-1">Filter out malicious links</p>
-                  <small class="text-muted">content-filter</small>
-                </a>
-                <a href="/" class="list-group-item list-group-item-action flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h4 class="mb-1">Angular</h4>
-                  </div>
-                  <p class="mb-1">HTTPS</p>
-                  <p class="mb-1">Two Factor Authentication</p>
-                </a>
-              </div>
-
+              For assignment 3 we were given the task to redo our DFD Schema from assignment 1 in Microsoft Threat Modeling Tool. From
+              the diagram we were able to generate a threat report and see teh vulnerabilities of our systeem. After we looked
+              through the threats list, we have choosen the 6 most important vulnerability we can think of, that need to
+              be taken care of.
             </p>
+            <p>
+              <ul>
+                <li>
+                  <a href="./reports/Mitigated.htm">Click here to see the full report.</a>
+                </li>
+                <li>
+                  <a href="./codes/Assignment3.zip">Download the code</a>
+                </li>
+              </ul>
+            </p>
+            <p>
+              Following the report we have implemented the following features:
+            </p>
+
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-1">ASP</h4>
+                </div>
+                <p class="mb-1">HTTPS</p>
+                <p class="mb-1">Server Certificat Validation</p>
+              </a>
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-1">Node</h4>
+                </div>
+                <p class="mb-1">HTTPS</p>
+                <p class="mb-1">Client Certificat Authentication</p>
+                <p class="mb-1">Two Factor Authentication</p>
+                <small class="text-muted">speakeasy</small>
+                <small class="text-muted">qrcode</small>
+                <p class="mb-1">Brute Force</p>
+                <small class="text-muted">express rate-limiter</small>
+                <p class="mb-1">Filter out malicious links</p>
+                <small class="text-muted">content-filter</small>
+              </a>
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-1">Angular</h4>
+                </div>
+                <p class="mb-1">HTTPS</p>
+                <p class="mb-1">Two Factor Authentication</p>
+              </a>
+            </div>
           </div>
           <div class="col-md-7">
             <!-- Project Image -->
@@ -1300,41 +1333,46 @@
         </h1>
         <!-- Project Four -->
         <div class="row">
-          <div class="col-md-12">
+          <div id="scrooge" class="col-md-12">
             <!-- Project Title -->
             <h3>ScroogeCoin</h3>
             <!-- Project Context -->
             <p>
-              For assignment 4 we were given the task to finish implementing Scrooge Coin, more specific 2 functions in the transaction
-              handel class. The full code can be found
+              For assignment 4 we were given the task to finish implementing the Scrooge Coin, more specifically 2 functions in the transaction
+              handle class. The full code can be found
               <a href="./codes/Assignment4.zip">here</a>
-              <br>
-              <h4>isValidTx()</h4>
-              The first method is the isValidTx(); this methode validate whether or not the given transaction is valid. There are 5 requirment
-              for it to pass.
-              <br>
-              <script src="https://gist.github.com/kenwaitam/26e9afa7d97bd0e736b145ae73a4f832.js"></script> 
-              The method start bij ceating a ArrayList variable to hold all the known Unspend Transactions(UTXO) It also
-              create a 2 variable to hold the inputs and outputs.
-              <script src="https://gist.github.com/kenwaitam/e99e1683eb1d366d85a8aa88c475d15f.js"></script> 
-              
-              It then start looping through the inputs to validate them. A variable is made the pool to check. and then
-              validate them to see if it has already been spend, if it is not already spent it wil be added to the spend
-              pool and the inputs sum. lastly it wil validate wheter or not the Signiture is valid.
-              <script src="https://gist.github.com/kenwaitam/ebd07f7347234de6b80d8395dbb3a481.js"></script>
-
-              The last step is to validate the outputs. For the outputs to be valid , it must not be negative.
-              If everything checks out it wil validate if the input is greater or equal to the out put and return true if its 
-              And finally it wil check if  sum of Input must be greater or equal to sum of output.
-              If everything checks out it wil return true otherwise false.
-              <script src="https://gist.github.com/kenwaitam/45f3e41e68c6d01a673adc28ce6608e2.js"></script>
-
-              <h4>handleTxs()</h4>
-              The second method we need to implement for this assignment is the handleTxs. This methode is responsible for handeling the transaction.
-              This method start with looping through the given transaction. It uses the isValidTx() to validate each transaction,
-              and remove all inputs from the utxo pool and add the outputs in the pool. after that it return all the transaction that are valid back in an array.
-              <script src="https://gist.github.com/kenwaitam/80bc72176266601a97c618c716edb7c9.js"></script>
             </p>
+
+            <h4>isValidTx()</h4>
+            <p>
+              The first method is the isValidTx(); this methode validate whether or not the given transaction is valid. There are 5 requirments
+              for it to pass.
+            </p>
+            <script src="https://gist.github.com/kenwaitam/26e9afa7d97bd0e736b145ae73a4f832.js"></script>
+
+            <p>This method starts by creating a ArrayList variable to hold all the known Unspend Transactions (UTXO). It also
+              creates 2 variables to hold the inputs and outputs.
+            </p>
+            <script src="https://gist.github.com/kenwaitam/e99e1683eb1d366d85a8aa88c475d15f.js"></script>
+
+            <p>
+              It then starts by looping through the inputs to validate them. A variable is then made to hold the pool to check and then
+              validate them to see if it has already been spend, if it is not already spent it wil be added to the spend
+              pool and the inputs sum. Lastly it wil validate whether or not the signature is valid.
+            </p>
+            <script src="https://gist.github.com/kenwaitam/ebd07f7347234de6b80d8395dbb3a481.js"></script>
+
+            <p>The last step is to validate the outputs. For the outputs to be valid, it must not be negative. If everything
+              checks out it will validate if the input is greater or equal to the output and then return true.
+            </p>
+            <script src="https://gist.github.com/kenwaitam/45f3e41e68c6d01a673adc28ce6608e2.js"></script>
+
+            <h4>handleTxs()</h4>
+            <p>The second method we need to implement for this assignment is the handleTxs(); This methode is responsible for
+              handling the transaction. This method start with looping through the given transaction. It uses the isValidTx();
+              to validate each transaction, and remove all inputs from the UTXO pool and add the outputs in the pool. After
+              that it will return all the transaction that are valid back in an array.</p>
+            <script src="https://gist.github.com/kenwaitam/80bc72176266601a97c618c716edb7c9.js"></script>
           </div>
         </div>
         <!-- Separete Between Projects -->
