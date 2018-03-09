@@ -1089,7 +1089,7 @@
               The client key exchange record does not contain a pre-master secret. However, since the selected server key exchange was
               RSA, a pre-master secret was probably generated from a diffie-hellman exchange protocol. The pre-master secret
               is the value that you receive from a key exchange, the client generates a pre-master secret and some random
-              bytes (<a href="url">PRNG</a>). The client then encrypts the pre-master secret with the server’s public key (received during
+              bytes (<a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a>). The client then encrypts the pre-master secret with the server’s public key (received during
               the certificate message). The encrypted key is then send to server as a client key exchange message. The server
               then decrypts the encrypted key using its own private key, at this point both parties know the pre-master secret.
               both the client and the server then compute the master secret by calculating the client and the server nonces
