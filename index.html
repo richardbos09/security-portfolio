@@ -1089,7 +1089,8 @@
               The client key exchange record does not contain a pre-master secret. However, since the selected server key exchange was
               RSA, a pre-master secret was probably generated from a diffie-hellman exchange protocol. The pre-master secret
               is the value that you receive from a key exchange, the client generates a pre-master secret and some random
-              bytes (<a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a>). The client then encrypts the pre-master secret with the server’s public key (received during
+              bytes (<a href="https://en.wikipedia.org/wiki/Pseudorandom_number_generator">PRNG</a>). 
+              The client then encrypts the pre-master secret with the server’s public key (received during
               the certificate message). The encrypted key is then send to server as a client key exchange message. The server
               then decrypts the encrypted key using its own private key, at this point both parties know the pre-master secret.
               both the client and the server then compute the master secret by calculating the client and the server nonces
@@ -1257,7 +1258,7 @@
             <!-- Project Context -->
             <p>
               For assignment 3 we were given the task to redo our DFD Schema from assignment 1 in Microsoft Threat Modeling Tool. From
-              the diagram we were able to generate a threat report and see teh vulnerabilities of our systeem. After we looked
+              the diagram we were able to generate a threat report and see the vulnerabilities of our systeem. After we looked
               through the threats list, we have choosen the 6 most important vulnerability we can think of, that need to
               be taken care of.
             </p>
