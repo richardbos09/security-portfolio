@@ -1089,7 +1089,7 @@
               The client key exchange record does not contain a pre-master secret. However, since the selected server key exchange was
               RSA, a pre-master secret was probably generated from a diffie-hellman exchange protocol. The pre-master secret
               is the value that you receive from a key exchange, the client generates a pre-master secret and some random
-              bytes (PRNG). The client then encrypts the pre-master secret with the server’s public key (received during
+              bytes (<a href="url">PRNG</a>). The client then encrypts the pre-master secret with the server’s public key (received during
               the certificate message). The encrypted key is then send to server as a client key exchange message. The server
               then decrypts the encrypted key using its own private key, at this point both parties know the pre-master secret.
               both the client and the server then compute the master secret by calculating the client and the server nonces
@@ -1142,12 +1142,12 @@
         <div class="row">
           <div class="col-md-5">
             <h6>
-              <b>Wat is being encrypted? In the encrypted handshake record and How?
+              <b>Wat is being encrypted? In the encrypted handshake record and how?
               </b>
             </h6>
             <p>
               The encrypted handshake record consist of all the handshake messages from both client and the server. The encrypted handshake
-              record is always sent after the change cipher spec record from both sides
+              record is always sent after the change cipher spec record from both sides.
             </p>
 
           </div>
@@ -1169,7 +1169,7 @@
               </b>
             </h6>
             <p>
-              When the client sent its last encrypted handshake message to the server the message is then turned into a finished message.
+              When the client sent its last encrypted handshake message to the server the message is then turned into a "finished message".
               This means that no one tampered with the encrypted handshake and it proves that we know the master secret.
               The server then starts decrypting the encrypted handshake message and it sends out a change cipher spec record.
               After the change cipher spec have been send, the server then sends a finished message that contains the decrypted
@@ -1218,11 +1218,11 @@
               Encrypted Alert
             </h5>
             <h6>
-              <b>With the last question answered there was one thing that I wanted to know and comment on it.
+              <b>With the last question answered there was one thing that I wanted to know and answer on it and that was Encrypted Alert.
               </b>
             </h6>
             <p>
-              For the Encrypted Alert at the end of the Wireshark trace is used as a TLS notification to notify the client that the current
+              The Encrypted Alert at the end of the Wireshark trace is used as a TLS notification to notify the client that the current
               session is closing (atleast thats what i think).
             </p>
 
